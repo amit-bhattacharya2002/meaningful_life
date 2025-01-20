@@ -33,7 +33,7 @@ const page = (props: Props) => {
                 <iframe width="800" height="450" src="https://www.youtube.com/embed/xiIB7FQLWaE?si=R9XXO8xTPxs2sPXr" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; " className='w-[90vw] h-[225px] sm:w-[800px] sm:h-[450px]' ></iframe>
                 <div className='flex flex-col gap-10 justify-center w-full sm:w-[30%]'>
                 <Image
-                    src={'/elementor-placeholder-image.webp'}
+                    src={'/phimage.webp'}
                     alt={'Hero Image'}
                     width={500}
                     height={500}
