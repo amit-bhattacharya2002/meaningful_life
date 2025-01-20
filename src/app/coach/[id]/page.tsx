@@ -11,11 +11,13 @@ import RegularSessionBtn from '@/app/Components/RegularSessionBtn';
 
 const playfair = Playfair_Display({subsets: ['latin'], weight: ['400', '700'], style: ['italic', 'normal']})
 
-type Props = {
+type PageProps = {
     params: {
         id: string;
     };
 }
+
+type Params = Promise<{id : string}>
 const coaches = [
     {
         coachid: "1",
@@ -47,13 +49,10 @@ const coaches = [
 ];
 
 
-const page = ({params}:{
-    params: {
-        id: string;
-    }
-}) => {
+const page = async ({params}:{params:Params}) => {
 
-    const activid = coaches.findIndex(coach => coach.coachid === params.id);
+    const { id } = await params;
+    const activid = coaches.findIndex(coach => coach.coachid === id);
 
     if (activid === -1) {
         return <div>Coach not found</div>; // Handle the case where the coach is not found
