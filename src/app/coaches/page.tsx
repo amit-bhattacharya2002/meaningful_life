@@ -12,19 +12,19 @@ const coaches = [
   {
       name: "Coach 1",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nostrum!",
-      image: "/elementor-placeholder-image.webp",
+      image: "/phimage.webp",
       link: "/coach/1"
   },
   {
       name: "Coach 2",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nostrum!",
-      image: "/elementor-placeholder-image.webp",
+      image: "/phimage.webp",
       link: "/coach/2"
   },
   {
       name: "Coach 3",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nostrum!",
-      image: "/elementor-placeholder-image.webp",
+      image: "/phimage.webp",
       link: "/coach/3"
   }
 ];
